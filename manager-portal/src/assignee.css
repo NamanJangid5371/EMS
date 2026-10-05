@@ -1,0 +1,72 @@
+.assignee-filters {
+  display: grid;
+  grid-template-columns: minmax(160px, 1.5fr) minmax(180px, 1fr);
+  gap: 0.55rem;
+  margin-bottom: 0.55rem;
+  align-items: end;
+}
+.assignee-filters .field label {
+  font-size: 0.78rem;
+}
+@media (max-width: 760px) {
+  .assignee-filters {
+    grid-template-columns: 1fr;
+  }
+}
+.assignee-picker {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 220px;
+  overflow: auto;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+.assignee-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  background: #fbfdfc;
+  cursor: pointer;
+  color: var(--ink);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.assignee-option:hover {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+.assignee-option.selected {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  box-shadow: inset 0 0 0 1px var(--brand);
+}
+.assignee-option .meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+.assignee-option .name-link {
+  margin-right: 0.25rem;
+}
+.assignee-option .name-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
+}
+.assignee-option .name-extra {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.assignee-empty {
+  padding: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "appinop-employee-management-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Appinop Employee Management System — Admin, Manager, and Employee portals",
+  "scripts": {
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:admin": "npm run dev --prefix admin-portal",
+    "dev:manager": "npm run dev --prefix manager-portal",
+    "dev:employee": "npm run dev --prefix employee-portal",
+    "seed": "npm run seed --prefix backend",
+    "install:all": "npm install --prefix backend && npm install --prefix admin-portal && npm install --prefix manager-portal && npm install --prefix employee-portal"
+  }
+}
